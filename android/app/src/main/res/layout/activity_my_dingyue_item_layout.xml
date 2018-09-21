@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.onemeter.view.CircleImageView
+            android:id="@+id/img_my_dingyue_title"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/a2" />
+
+        <TextView
+            android:id="@+id/text_my_dingyue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/img_my_dingyue_title"
+            android:text="米果美语"
+            android:textColor="@color/text_cl"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_my_title_jiulanliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_my_dingyue_title"
+            android:text="浏览量："
+            android:textColor="@color/menu_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_my_number_jiulanliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/text_my_title_jiulanliang"
+            android:text="12345"
+            android:textColor="@color/menu_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/my_dingyue_status"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_style_04"
+            android:gravity="center"
+            android:text="已订阅"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/my_dingyue_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/my_dingyue_number"
+            android:text="订阅数:"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/my_dingyue_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text="12345"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

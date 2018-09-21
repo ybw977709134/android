@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_01"
+    android:orientation="vertical">
+<!--注册标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/lin_register_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_register_back"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingTop="1dp"
+                android:src="@mipmap/return_icon" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--主体-->
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/rel_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray_01"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+            <View
+                android:id="@+id/view0"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black_ed_text" />
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/view0"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/textView22"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@mipmap/shouji"
+                    />
+
+                <com.onemeter.utils.ClearEditText
+                    android:id="@+id/ed_pr_phone"
+                    style="@style/inputbox_borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="5dp"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:hint="请输入手机号码"
+                    android:maxLength="11"
+                    android:textColor="@color/bg_Black"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/linearLayout8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black_ed_text" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/button"
+                    android:layout_marginLeft="20dp"
+                    android:text="动态码"
+                    android:textColor="@color/black_ed_text"
+                    android:textSize="16sp" />
+
+                <com.onemeter.utils.ClearEditText
+                    android:id="@+id/ed_pr_dt_code"
+                    style="@style/inputbox_borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:textColor="@color/bg_Black"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <Button
+                    android:id="@+id/bt_dynamic_code"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_password_style"
+                    android:text="获取验证码"
+                    android:textColor="@color/text_cl"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/linearLayout9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black_ed_text" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/button9"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@mipmap/mima"
+                    android:layout_marginLeft="13dp"
+                    android:layout_below="@+id/button"
+                    />
+
+                <com.onemeter.utils.ClearEditText
+                    android:id="@+id/ed_pr_password"
+                    style="@style/inputbox_borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="true"
+                    android:hint="请设置密码6-16位英文或数字"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColor="@color/bg_Black"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:text="弱"
+                    android:textColor="@color/lime"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/linearLayout10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black_ed_text"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/button12"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/button"
+                    android:layout_marginLeft="20dp"
+                    android:text="请确认密码"
+                    android:textColor="@color/bg_Gray"
+                    android:textSize="16sp" />
+
+
+                <com.onemeter.utils.ClearEditText
+                    android:id="@+id/ed_pr_confirm_password"
+                    style="@style/inputbox_borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColor="@color/bg_Black"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view01"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black_ed_text"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/regster_xieyi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/relativeLayout10"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/xieyi"/>
+            <TextView
+                android:id="@+id/regster_xieyi_text"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="我已经阅读并同意《用户注册协议》"
+                android:textColor="@color/bg_Black"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_pr_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/regster_xieyi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_selector_style_03"
+            android:text="注册"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

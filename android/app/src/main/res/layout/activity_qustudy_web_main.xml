@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/activity_qustudy_title_rel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:paddingBottom="10.0dip"
+        android:visibility="gone"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/activity_qustudy_img_return"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="趣学习"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <org.xwalk.core.XWalkView
+        android:id="@+id/qu_study_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_qustudy_title_rel" />
+
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gray"
+        android:max="100">
+    </ProgressBar>
+
+
+</RelativeLayout>

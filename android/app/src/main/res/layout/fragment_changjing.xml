@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray_01"
+    android:orientation="vertical">
+
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/rel_huo_dong_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="场景制作"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@mipmap/add" />
+
+
+    </RelativeLayout>
+
+    <!--主体部分-->
+    <ScrollView
+        android:id="@+id/fragment_changjing_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/fragment_home_img_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 头部图片轮播 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center|bottom"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/dot1"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_focused" />
+
+                    <View
+                        android:id="@+id/dot2"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/dot3"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_normal" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+            <!--场景列表项-->
+            <com.onemeter.view.ListViewForScrollView
+                android:id="@+id/mobai_fragment_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:divider="@color/bg_gray_01"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

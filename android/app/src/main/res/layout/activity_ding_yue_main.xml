@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray_01">
+
+    <LinearLayout
+        android:id="@+id/layout_zone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/title_Black">
+
+            <ImageView
+                android:id="@+id/activity_app_dingyue_img_return"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="1dp"
+                android:paddingRight="10dp"
+                android:paddingTop="1dp"
+                android:src="@mipmap/return_icon" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/dibiao" />
+
+                <com.onemeter.view.AlwaysMarqueeTextView
+                    android:id="@+id/dingyue_dingwei"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <!--第一层fragment-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/green" />
+
+        <RelativeLayout
+            android:id="@+id/hair_topic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <RadioGroup
+                android:id="@+id/fragment_dy_radioGroup_title"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/fragment_dy_rb_tuijian"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="推荐订阅"
+                    android:textColor="@drawable/wp_text_selector"
+                    android:textSize="15.0sp" />
+
+                <RadioGroup
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/bg_Black"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/fragment_dy_rb_my"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="我的订阅"
+                    android:textColor="@drawable/wp_text_selector"
+                    android:textSize="15.0sp" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:src="@color/bg_Gray">
+
+            <View
+                android:id="@+id/dy_view_cursor_1"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@color/green" />
+
+            <View
+                android:id="@+id/dy_view_cursor_2"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@color/green" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_dy_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>

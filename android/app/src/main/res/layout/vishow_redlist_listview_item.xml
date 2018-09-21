@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vishow_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@mipmap/a2"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/vishow_item_recording_ranking"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/vishow_item_recording_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_style_05">
+
+        <TextView
+            android:id="@+id/vishow_item_recording_pageviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="sdsadasdsadsa"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

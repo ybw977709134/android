@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/guide_img_first"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/guide_img1" />
+
+    <TextView
+        android:id="@+id/guide_text_title"
+        android:layout_below="@+id/guide_img_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="好学·微课堂"
+        android:textColor="@color/text_cl"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/guide_text_first"
+        android:layout_below="@+id/guide_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="交流学习·订阅分享·点赞互动"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_cl"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>

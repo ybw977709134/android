@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/activity_my_folder_music_img_return"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/return_icon" />
+
+        <RadioButton
+            android:id="@+id/btn_music_local"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/activity_my_folder_music_img_return"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="本地"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btn_music_my"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:layout_toLeftOf="@+id/btn_add"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/white_02"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/add" />
+
+    </RelativeLayout>
+
+    <!--主体部分-->
+    <com.onemeter.view.XListView
+        android:id="@+id/activity_my_folder_music_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

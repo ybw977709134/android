@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <com.onemeter.swipe.SwipeLayout
+        android:id="@+id/audio_record_message_item_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/trash"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/trash" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--主体item布局 -->
+        <RelativeLayout
+            android:id="@+id/audio_record_message_item_rel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_selector"
+            >
+
+            <TextView
+                android:id="@+id/audio_record_message_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/message_center_look"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_cl"
+                android:textSize="15sp"
+                android:text="这是小尹2016-01-29号的录音" />
+
+
+
+            <TextView
+                android:id="@+id/audio_record_message_item_mb"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_below="@+id/audio_record_message_item_title"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#737373"
+                android:textSize="13dp"
+                android:text="1.2MB"/>
+        </RelativeLayout>
+    </com.onemeter.swipe.SwipeLayout>
+
+</LinearLayout>

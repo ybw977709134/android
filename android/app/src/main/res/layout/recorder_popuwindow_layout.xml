@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/activity_recorder_rel"
+        android:layout_width="match_parent"
+        android:layout_height="165dp">
+
+        <TextView
+            android:id="@+id/activity_recorder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="点击开始录音"
+            android:textColor="@color/text_cl"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/activity_recorder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/activity_recorder_img_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@mipmap/btn_sound_start"/>
+            <TextView
+                android:id="@+id/activity_recorder_img_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.0"
+                android:text="开始"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_Gray"/>
+
+    <LinearLayout
+        android:id="@+id/activity_recorder_quxiao_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_cl"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/img_title"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_title"
+            android:text="推荐订阅信息"
+            android:textColor="@color/text_cl"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <com.onemeter.view.XListView
+        android:id="@+id/tuijian_dingyue_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/bg_gray_01"
+        android:dividerHeight="10dp" />
+
+
+</LinearLayout>

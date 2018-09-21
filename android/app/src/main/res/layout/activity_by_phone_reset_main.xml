@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/by_phone_rel_reset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/activity_sms_find_password_img"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="短信重置密码"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--主体部分-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_White">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/relativeLayout10"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentStart="true">
+            <View
+                android:id="@+id/view0"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_ed_text"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:id="@+id/linearLayout8"
+                android:layout_below="@+id/view0"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/textView22"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/mima"
+                    android:layout_below="@+id/button"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <com.onemeter.utils.ClearEditText
+                    android:id="@+id/ed_reset_password"
+                    style="@style/inputbox_borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:cursorVisible="true"
+                    android:hint="请设置密码6-16位英文或数字"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bg_Black"
+                    android:textSize="16sp"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_ed_text"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/linearLayout8"
+                android:layout_centerHorizontal="true" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:id="@+id/linearLayout9"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请确认密码"
+                    android:textSize="15sp"
+                    android:textColor="@color/black_ed_text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/button"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <com.onemeter.utils.ClearEditText
+                    android:id="@+id/ed_confirm_password"
+                    style="@style/inputbox_borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="请输入密码"
+                    android:cursorVisible="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:textColor="@color/bg_Black"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+            </LinearLayout>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_ed_text"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ByPhoneResetPasswordActivity_next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_selector_style_03"
+            android:text="下一步"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/relativeLayout10"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

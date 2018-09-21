@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_01"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/activity_huodong_setting_title_rel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/activity_vishow_redlist_img_return"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:src="@mipmap/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="微秀热榜"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微秀热榜"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text_cl"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+<ImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_gravity="center|bottom"
+    android:layout_marginLeft="10dp"
+    android:background="@mipmap/main_list"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="微秀热榜"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center|bottom"
+    android:textSize="15sp"/>
+</LinearLayout>
+
+    <com.onemeter.view.XListView
+        android:id="@+id/activity_vishow_redlist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@color/bg_gray_01"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+       />
+
+
+</LinearLayout>

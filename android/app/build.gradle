@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.onemeter"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile files('libs/achartengine-1.1.0.jar')
+    compile(name: 'xwalk_core_library-15.44.384.13', ext: 'aar')
+    compile files('libs/universal-image-loader-1.9.2.jar')
+    compile files('libs/locSDK_6.22.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5509.jar')
+    compile files('libs/happy-dns-0.2.7.jar')
+    compile files('libs/flame.jar')
+}
+
+
+repositories  {
+    flatDir {
+        dirs 'libs'
+    }
+}

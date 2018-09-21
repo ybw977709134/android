@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_01"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/activity_email_setting_title_rel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/activity_email_img_return"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="绑定邮箱"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/email_change_queding"
+            android:layout_width="22dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/nav_confirm"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <!--主体部分-->
+
+    <EditText
+        android:id="@+id/text_setting_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/text_cl"
+        android:background="@drawable/et_style"
+        android:textSize="15sp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好名字可以让你的朋友更容易记住你!"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#737373"
+        android:textSize="13sp"/>
+
+
+</LinearLayout>

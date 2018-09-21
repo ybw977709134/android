@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_zhiding_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="@color/bg_gray_01"
+    android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/ee_border_left"
+            android:layout_weight="1">
+
+            <!--***************浏览量*********************-->
+            <TextView
+                android:id="@+id/txt_fragment_qianke_today_flow"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#21B8FF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_fragment_home_today_flow_title"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_fragment_qianke_today_flow"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="浏览量"
+                android:textColor="@color/menu_text"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ee_border_right"
+            android:gravity="center">
+
+            <!--***************参加数*********************-->
+            <TextView
+                android:id="@+id/txt_fragment_flow"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FE2B2B"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_fragment_flow_title"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_fragment_flow"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="参加数"
+                android:textColor="@color/menu_text"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_more_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="查看更多数据"
+        android:textColor="@color/bule2"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
+
+
+

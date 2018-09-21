@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/my_dingyue_child_item_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@mipmap/a2">
+
+        <TextView
+            android:id="@+id/my_dingyue_child_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="米果美语学校"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/main_hot"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

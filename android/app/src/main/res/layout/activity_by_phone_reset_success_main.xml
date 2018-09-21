@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/activity_sms_find_password_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/activity_sms_find_password_img"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="短信重置密码"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_sms_find_password_title_1"
+        android:layout_below="@+id/activity_sms_find_password_title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="请妥善保管您的密码"
+        android:textSize="18sp"
+        android:textColor="@color/menu_text"/>
+   <ImageView
+       android:id="@+id/activity_sms_find_password_img_tishi"
+       android:layout_marginTop="60dp"
+       android:layout_below="@+id/activity_sms_find_password_title_1"
+       android:layout_width="100dp"
+       android:layout_height="110dp"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:background="@mipmap/zhuangtai"/>
+
+    <Button
+        android:id="@+id/activity_sms_find_password_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/activity_sms_find_password_img_tishi"
+        android:layout_marginTop="60dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_selector_style_03"
+        android:text="立即登录"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

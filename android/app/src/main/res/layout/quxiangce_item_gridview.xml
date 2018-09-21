@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:padding="2dp"
+    android:background="@drawable/ff_border">
+   <ImageView
+       android:id="@+id/qupic_item_img"
+       android:layout_width="180dp"
+       android:layout_height="200dp"
+       android:layout_centerHorizontal="true"
+       android:scaleType="fitXY"
+       android:src="@mipmap/logo"/>
+   <TextView
+       android:layout_below="@+id/qupic_item_img"
+       android:id="@+id/qupic_item_text"
+       android:layout_width="wrap_content"
+       android:layout_height="25dp"
+       android:gravity="center"
+       android:layout_alignLeft="@+id/qupic_item_img"
+       android:text="去相册图片分类"
+       android:paddingLeft="5dp"
+       android:textColor="@color/text_cl"
+       android:textSize="15sp"/>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_01"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/fragment_home_title_rel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_Black">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/dibiao" />
+
+            <com.onemeter.view.AlwaysMarqueeTextView
+                android:id="@+id/home_dingwei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@mipmap/add"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+    <!--主体部分-->
+    <ScrollView
+        android:id="@+id/fragment_home_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_home_title_rel"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/fragment_home_img_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 头部图片轮播 -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/dot1"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_focused" />
+
+                    <View
+                        android:id="@+id/dot2"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/dot3"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/dot4"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/dot5"
+                        android:layout_width="7dip"
+                        android:layout_height="7dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:background="@drawable/dot_normal" />
+
+                </LinearLayout>
+            </FrameLayout>
+            <!--订阅、热榜、动态-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_dingyue_show"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/main_subscribe" />
+
+                    <TextView
+                        android:id="@+id/btn_dingyue_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="订阅秀"
+                        android:textColor="@color/text_cl"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_vishow_list"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/main_list_1" />
+
+                    <TextView
+                        android:id="@+id/btn_vishow_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="微秀热榜"
+                        android:textColor="@color/text_cl"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_dynmic_periphery"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@mipmap/main_around" />
+
+                    <TextView
+                        android:id="@+id/btn_dynmic_periphery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="周边动态"
+                        android:textColor="@color/text_cl"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--宣传册并显示精选模板-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/activity_home_model_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/main_tuiju" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="推荐场景"
+                        android:textColor="@color/text_cl"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+                <!--宣传册-->
+                <LinearLayout
+                    android:id="@+id/activity_home_model_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_home_model_title"
+                    android:orientation="vertical">
+
+                    <com.onemeter.view.ListViewForScrollView
+                        android:id="@+id/activity_home_model_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/bg_gray_01"
+                        android:dividerHeight="10dp"
+                        android:layout_weight="1"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
